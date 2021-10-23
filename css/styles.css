@@ -1,0 +1,43 @@
+:root {
+  --text-color: #212121;
+}
+
+.body {
+  font-family: "Roboto Mono", sans-serif;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+.tile-set {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.tile {
+  text-align: center;
+  padding: 10px;
+  border: 2px dashed #2a2a2a;
+}
+
+.tile:not(:last-child) {
+  margin-right: 20px;
+}
+
+.icon {
+  display: inline-flex;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon.with-bg {
+  background-color: wheat;
+}
+
+.icon.with-icon {
+  background-image: url("https://cdn2.iconfinder.com/data/icons/avatars-60/5985/34-Father-512.png");
+}
